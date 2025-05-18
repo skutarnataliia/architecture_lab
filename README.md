@@ -38,5 +38,7 @@ This project demonstrates a simple microservice-based REST application using Fas
 ## Usage Example
 
 uvicorn db_service:app --port 8002
+
 uvicorn business_service:app --port 8001
+
 uvicorn client_service:app --port 8000
