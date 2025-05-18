@@ -6,7 +6,7 @@ This project demonstrates a simple microservice-based REST application using Fas
 
 - **Client Service**: Entry point for users; handles authentication and orchestrates calls to other services.
 - **Business Logic Service**: Simulates a longer-running operation (e.g., ML model inference).
-- **Database Service**: Stores and retrieves data using an in-memory dictionary.
+- **Database Service**: Simulates database.
 
 
 ---
