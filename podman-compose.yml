@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  db:
+    build:
+      context: ./db
+    ports:
+      - "8002:8002"
+
+  business:
+    build:
+      context: ./business
+    ports:
+      - "8001:8001"
+
+  client:
+    build:
+      context: ./client
+    ports:
+      - "8000:8000"
+    environment:
+      - BUSINESS_URL=http://business:8001
+      - DB_URL=http://db:8002
